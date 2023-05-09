@@ -1,0 +1,35 @@
+
+header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  button {
+    border: none;
+    box-shadow:  0px 0px 20px 0px rgba(48, 48, 46, 0.8);
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.2);
+  }
+
+  a {
+    font-size: 2rem;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #c99f08;
+  }
