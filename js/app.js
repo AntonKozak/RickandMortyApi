@@ -23,4 +23,4 @@ const listLocationRickandMortyApi = async () => {
 
 export {listCharactersRickandMortyApi, listLocationRickandMortyApi, showCharacterDetails};
 
-// document.addEventListener('DOMContentLoaded', listCharactersRickandMortyApi());
+document.addEventListener('DOMContentLoaded', listCharactersRickandMortyApi());

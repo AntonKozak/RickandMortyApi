@@ -19,5 +19,5 @@ const rout = () => {
       break;
   }
 };
-console.log(state);
+// console.log(state);
 document.addEventListener("DOMContentLoaded", rout);
