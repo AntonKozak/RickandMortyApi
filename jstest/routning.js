@@ -1,8 +1,10 @@
 import state from "./state.js";
+import { RickandMortyApi } from "../js/fetchApi.js";
 import {
   listCharactersRickandMortyApi,
   listLocationRickandMortyApi,
   showCharacterDetails,
+  nextListCharactersRickandMortyApi,
 } from "../js/app.js";
 
 const rout = () => {
@@ -17,7 +19,10 @@ const rout = () => {
     case "/detailsCharacters.html":
       showCharacterDetails();
       break;
+    case "/next.html":
+      nextListCharactersRickandMortyApi();
+      break;
   }
 };
 // console.log(state);
-document.addEventListener("DOMContentLoaded", rout);
+export default rout;

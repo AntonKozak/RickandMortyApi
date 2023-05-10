@@ -7,12 +7,24 @@ const loadCharactersOnPage = async() => {
     const character = new Character();
     const characters = await character.listOfCharacters();
     // console.log(characters.results[0]);
+    const charAll = characters.results.map(
+        (person) => 
+        new Char(person.id, person.name, person.image, person.status)  
+    );
+    return charAll;
+
+};
+
+const loadNextCharactersOnPage = async() => {
+    const character = new Character();
+    const characters = await character.listOfCharactersNext();
 
     const charAll = characters.results.map(
         (person) => 
         new Char(person.id, person.name, person.image, person.status)  
     );
-    // console.log(charAll);
+    console.log(charAll);
+
     return charAll;
 };
 
@@ -39,9 +51,9 @@ const loadLocationOnPage = async() => {
             dimension: loc.dimension, 
             // resident: loc.residents.map((resident) =>({url: resident})),
     }));
-    // console.log(await locationAll);
+    // console.log(locationAll);
     return locationAll;
 };
 
 // loadLocationOnPage();
- export {loadCharactersOnPage, loadLocationOnPage, loadCharacterDetailsOnPage};
+ export {loadCharactersOnPage, loadLocationOnPage, loadCharacterDetailsOnPage, loadNextCharactersOnPage};
